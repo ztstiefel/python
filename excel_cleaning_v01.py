@@ -13,7 +13,7 @@ def del_rows_and_cols():
             df.drop(df.columns[2], axis = 1, inplace = True) # drop 3rd column (C)
             df.reset_index(drop=True, inplace=True) # reset row index
             df.columns = df.iloc[0] #set row index 0 = header
-            df = df[1:] # remove now unnecessart first row
+            df = df[1:] # remove now unnecessary first row
             df = df.dropna(axis=1,how='all') # drop columns with all NaN values
             df.to_excel(os.path.join(new_dir,os.path.basename(file)),  index=False, header=True) # write out modified file
 
