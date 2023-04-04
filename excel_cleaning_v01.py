@@ -1,8 +1,8 @@
 import pandas as pd
 import os
 
-dir = 'C:\\Users\\ztsti\\Downloads\\grades' # directory with input files
-new_dir = 'C:\\Users\\ztsti\\Downloads\\grades\\cleaned' # directory where output files should go
+dir = 'C:\\Users\\<USER>\\Downloads\\project_dir' # directory with input files
+new_dir = 'C:\\Users\\<USER>\\Downloads\\project_dir\\cleaned' # directory where output files should go
 
 def del_rows_and_cols():
     for file in os.listdir(dir):
