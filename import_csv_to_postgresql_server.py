@@ -31,6 +31,6 @@ for file in os.listdir(dir):
 # code below removed -redundant
 #conn.commit()
 
-# Close the curor and the connection
+# Close the cursor and the connection
 cur.close()
 conn.close()
